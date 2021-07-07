@@ -1,0 +1,66 @@
+/*같은 폴더에서는 css/ 안해도됨 */
+@import "header.css";
+@import "menu-todo.css";
+
+/*요소를 숨겨주는 : todo.js 나중에 삭제*/
+.hidden {
+  display: none;
+}
+
+body {
+  margin: 0;
+  width: 100vw;
+  height: 400vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  position: relative; /*하위 absoulte 적용하기위해 */
+}
+
+.bgImage {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+/* ALADDIN 글자 */
+.title {
+  position: absolute;
+  top: 7%;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/*마우스가 버튼에 올려져있을 때 */
+button:hover {
+  transform: scale(1.1);
+}
+
+/* all:unset 요소의 모든 속성을, 속성이 값을 상속하는 경우 
+상속값으로, 아니면 초깃값으로 변경합니다. */
+ul,
+input {
+  all: unset;
+}
+
+/* 이름을 입력하세요 */
+.name-container {
+  margin-left: 0;
+  position: absolute;
+  left: 1.5%;
+  width: 20%;
+  top: 5.5%;
+  z-index: 3;
+}
+
+.asfsakfjsalkfjksa {
+}

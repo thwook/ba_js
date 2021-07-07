@@ -4,13 +4,107 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="img/rampicon2.png">
+    
     <title>Momentum</title>
+    <script src="https://kit.fontawesome.com/a6a726722e.js" crossorigin="anonymous"></script>
+   <!-- js파일 defer를 써주어야함. 안써줄거면 맨뒤로 코드보내기.-->
+   <script src="js/clock.js" defer></script>
+   <script src="js/quotes.js" defer></script>
+   <script src="js/background.js" defer></script>
+   <script src="js/todo.js" defer></script>
+   <script src="js/weather.js" defer></script>
+   <script src="js/name.js" defer></script>
+   <script src="js/todos.js" defer></script>
+   <script src="js/menu.js" defer></script>
   </head>
   <body>
-    <div class="hello">
-      <h1 class="blah">click me!! <h1>
+    <header class="header">
+      <div class="header-time-blank"></div>
+      <div class="header-time-name">
+          <div class="header__time-container">
+              <span class="header__time">00:00</span>
+          </div>
+          <div class="name-container">
+              <form class="name-form name-hide" action="">
+                  <input 
+                  required
+                  class="name-input"
+                  type="text" 
+                  placeholder="What is your name?">
+                  <input type="submit" value="확인" />
+                </form>
+              <span class="name name-hide"></span>
+          </div>
+      </div>
+      <div class="weather-music-container">
+        <section class="music">
+          <span class="music__title"></span>
+          <div class="music__btns">
+              <button class="music__btn redo-btn"><i class="fas fa-redo" data-value="redo"></i></button>                
+              <button class="music__btn"><i class="fas fa-step-backward" data-value="backward"></i></button>
+              <button class="music__btn"><i class="fas fa-play play" data-value="play"></i></button>
+              <button class="music__btn"><i class="fas fa-step-forward" data-value="forward"></i></i></button>
+              <button class="music__btn random-btn"><i class="fas fa-random" data-value="refresh"></i></button>   
+          </div>
+        </section>
+        <div class="header__weather"></div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="menu">
+        <header class="menu__header">
+          <!-- data key = data id : 값을 할당하는 변수(역할) js에서 사용 -->
+          <button class="menu__header__btn " data-key="header-icon" data-value="scroll"><i class="fas fa-bars" data-key="header-icon" data-value="scroll" ></i></button>
+          <button class="menu__header__text " data-key="header-text" data-value="scroll">MENU</button>    
+        </header>
+        <div class="menu__vertical"></div>
+        <ul class="menu__list">
+          <!-- div가 상위 li가 하위/소제목처럼 표현하기 위해 -->
+          <div class="menu__title menu-home"><button class="menu__title-btn" data-value="Home">Home</button></div>
+          <li class="menu__item menu-todo"><button class="menu__item__btn" data-value="Todo">Todo</button></li>
+          <div class="menu__title menu-movie"><button class="menu__title-btn" data-value="Movie">Movie</button></div>
+          <li class="menu__item menu-scene"><button class="menu__item__btn" data-value="Scene">Scene</button></li>
+          <li class="menu__item menu-illust"><button class="menu__item__btn" data-value="Illust">Illust</button></li>
+      </ul>
+      </section>
+      <section class="todo">
+        <header class="todo__header"> 
+          <button class="todo__header__btn pending-btn"><i class="fas fa-list-ul"></i></button>
+          <form class="todo__form">
+              <input class="todo__input" placeholder="TODAY's TO-DO" type="text">
+          </form>
+          <button class="todo__header__btn finished-btn"><i class="far fa-thumbs-up"></i></button>
+      </header>
+      <div class="todo-container">
+        <div class="todo-list-container pending-container">
+            <header class="todo-list-header">PLAN</header>
+            <ul class="todo-list pending-list">
+            </ul>
+        </div>
+        <div class="todo-list-container finished-container">
+            <header class="todo-list-header">FINISH</header>
+            <ul class="todo-list finished-list">
+            </ul>
+        </div>
     </div>
-    <script src="app.js"></script>
+      </section>
+      <span class="title">ALADDIN</span>
+        
+    </main>
+    <form id="todo-form">
+      <input type="text" placeholder="Write a To Do and Press Enter" />
+    </form>
+    <ul id="todo-list"></ul>
+    <div id="quote">
+      <span></span>
+      <span></span>
+    </div>
+    <div id="weather">
+      <span></span>
+      <span></span>
+    </div>
   </body>
+  
 </html>
