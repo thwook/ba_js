@@ -2,6 +2,12 @@
 @import "header.css";
 @import "menu-todo.css";
 
+@font-face {
+  font-family: yasashii-bold;
+  font-weight: bold;
+  src: url("./font/OtomanopeeOne-Regular.ttf") format("opentype");
+}
+
 /*요소를 숨겨주는 : todo.js 나중에 삭제*/
 .hidden {
   display: none;
@@ -31,6 +37,7 @@ body {
 .title {
   position: absolute;
   top: 7%;
+  color: rgb(236, 252, 255);
 }
 
 button {

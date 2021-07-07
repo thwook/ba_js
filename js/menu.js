@@ -10,7 +10,7 @@ const menuIllust = document.querySelector(".menu-illust");
 const menuVertical = document.querySelector(".menu__vertical");
 
 menuHeader.addEventListener("click", onClickMenuHeader);
-menuContent.addEventListener("click",onClickMenuContent);
+menuContent.addEventListener("click", onClickMenuContent);
 
 let clicked = false;
 let duration = 0;

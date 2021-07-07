@@ -59,15 +59,133 @@
   display: flex;
   justify-content: flex-end;
   margin-right: 80px;
+  align-items: center;
 }
 
+.name-container {
+  margin-left: 5px;
+  display: flex;
+  position: absolute;
+  align-self: center;
+  padding: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+  border: var(--border);
+  justify-content: space-evenly;
+}
+
+.name-form {
+  width: var(--name-form);
+}
+
+.name-input::placeholder {
+  color: white;
+  opacity: 0.8;
+  font-weight: bold;
+}
+
+.name-hide {
+  display: none;
+}
+
+/* 글자입력할 때
+.name-form:focus-within {
+  background-color: white;
+  color: black;
+}*/
+
+.music {
+  /*날씨와 간격 띄우기 */
+  margin-right: 30px;
+  height: 80%;
+  width: 30%; /* ? */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.music-title {
+  width: 13vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: var(--white-color);
+  font-size: var(--header-music-size);
+  padding: 0.1em;
+  border-radius: 1em;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  border: var(--border);
+}
+
+.music:hover .music__title {
+  background: var(--white-color);
+  color: var(--player-color);
+  font-weight: bold;
+}
+
+.music__btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white-color);
+  will-change: transform;
+  padding: 0.2em;
+}
+
+.music:hover .music__btn {
+  color: var(--player-color);
+  background-color: var(--white-color);
+}
+.music__btn {
+  color: var(--white-color);
+  border: var(--border);
+  font-size: var(--music-btn-icon);
+  padding: 10px;
+  width: 25px;
+  height: 25px;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5px;
+  will-change: transform;
+}
+
+.redo-btn,
+.random-btn {
+  opacity: 0.7;
+  padding: 6px;
+}
+
+.header__weather {
+  border: var(--border);
+  font-size: var(--header-weather-size);
+  padding: 2px;
+  border-radius: 0.75em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22%;
+  transition: 0.3s all ease-in-out;
+  user-select: none;
+}
+
+.header__weather:hover {
+  color: var(--player-color);
+  background-color: var(--white-color);
+}
+
+/*시계부분 */
 .header-time-name {
   display: flex;
   align-self: center;
+  position: relative;
 }
 
 .header__time {
   font-size: 55px;
   font-weight: 600;
-  color: rgb(223, 232, 250);
+  color: rgb(237, 241, 248);
 }
