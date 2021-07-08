@@ -18,7 +18,7 @@ function onSubmit(event) { //enter
 
 function showName(text) {
     nameSpan.classList.remove("name-hide");
-    nameSpan.innerHTML = `Welcome ${text}`;
+    nameSpan.innerHTML = `😃 Hello ${text}`;
 }
 
 //첫단계 자바스크립트가 local strage 확인하는것. (불러오는 것)

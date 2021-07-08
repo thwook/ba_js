@@ -1,5 +1,5 @@
 const toDoForm = document.getElementById("todo-form");
-const toDoInput = toDoForm.querySelector("input");
+//const toDoInput = toDoForm.querySelector("input");
 // = document.querySelector("#todo-form input"); 과 같음.
 const toDoList = document.getElementById("todo-list");
 
@@ -52,8 +52,7 @@ function handleToDoSubmit(event) {
     savetoDos(); //toDos array를 localStrage에 집어넣는것.
 }
 
-toDoForm.addEventListener("submit", handleToDoSubmit);
-
+//toDoForm.addEventListener("submit", handleToDoSubmit);
 
 const savedtoDos = localStorage.getItem(TODOS_KEY);
 //savedtoDos가 localStrage에 존재하면

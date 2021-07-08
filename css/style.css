@@ -1,6 +1,7 @@
 /*같은 폴더에서는 css/ 안해도됨 */
 @import "header.css";
 @import "menu-todo.css";
+@import "movie.css";
 
 @font-face {
   font-family: yasashii-bold;
@@ -57,14 +58,4 @@ button:hover {
 ul,
 input {
   all: unset;
-}
-
-/* 이름을 입력하세요 */
-.name-container {
-  margin-left: 0;
-  position: absolute;
-  left: 1.5%;
-  width: 20%;
-  top: 5.5%;
-  z-index: 3;
 }

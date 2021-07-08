@@ -18,26 +18,29 @@
    <script src="js/name.js" defer></script>
    <script src="js/todos.js" defer></script>
    <script src="js/menu.js" defer></script>
+   <script src="js/music.js" defer></script>
   </head>
   <body>
     <header class="header">
       <!--header-time-blank는 33% 1/3씩 공간나눠주기 위해 생성-->
-      <div class="header-time-blank"></div>
+      <div class="header-time-blank">
+        <div class="name-container">
+          <form class="name-form name-hide" action="">
+              <input 
+              required
+              class="name-input"
+              type="text" 
+              placeholder="What is your name?"/>
+              <input class="name-submit" type="submit" value="NEXT" />
+          </form>
+          <span class="name name-hide"></span>
+      </div>
+      </div>
       <div class="header-time-name">
           <div class="header__time-container">
               <span class="header__time">00:00</span>
           </div>
-          <div class="name-container">
-              <form class="name-form name-hide" action="">
-                  <input 
-                  required
-                  class="name-input"
-                  type="text" 
-                  placeholder="What is your name?">
-                  <input type="submit" value="NEXT" />
-                </form>
-              <span class="name name-hide"></span>
-          </div>
+          
       </div>
       <div class="weather-music-container">
         <section class="music">
@@ -92,17 +95,193 @@
     </div>
       </section>
       <span class="title">ALADDIN</span>
-        
-    </main>
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" />
-    </form>
-    <ul id="todo-list"></ul>
+      <section class="follow-btns-container">
+        <header class="follow-btns__header">
+            <span>Visit</span>
+            <span class="header__lalaland">Aladdin</span>
+        </header>
+        <div class="follow-btns">
+            <a href="https://www.facebook.com/Aladdin" target="_blank">
+                <button class="follow-btn face-book">
+                    <i class="fab fa-facebook-square"></i>
+                </button>
+            </a>
+            <a href="https://twitter.com/Aladdin" target="_blank">
+                <button class="follow-btn twitter">
+                    <i class="fab fa-twitter"></i>
+                </button>
+            </a>
+            <a href="https://www.instagram.com/Aladdin/" target="_blank">
+                <button class="follow-btn instagram">
+                    <i class="fab fa-instagram"></i>
+                </button>
+            </a>
+        </div>
+    </section>
+    <section class="movie">
+        <header class="movie__header">
+            <i class="fas fa-film movie__header__icon"></i>
+            <span class="movie__header__text">Movie</span>
+        </header>
+        <section class="movie__scene">
+            <header class="scene__header">Scene</header>
+            <div class="scene__content">
+                <button class="scene__slider-btn scene__left-btn">
+                    <i class="fas fa-arrow-left" data-id="left-btn"></i>
+                </button>
+                <div class="scene__wrapper">
+                    <ul class="scene__slider">
+                        <li class="scene__slider__item">
+                            <div class="scene__photo">
+                                <img class="photo" src="img/scene/scene photo1.jpg" alt="">
+                            </div>
+                            <div class="scene__photo">
+                                <img class="photo" src="img/scene/scene photo2.jpg" alt="">
+                            </div>
+                            <div class="scene__photo">
+                                <img class="photo" src="img/scene/scene photo3.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="scene__slider__item">
+                            <div class="scene__photo">
+                                <img class="photo" src="img/scene/scene photo4.jpg" alt="">
+                            </div>
+                            <div class="scene__photo">
+                                <img class="photo" src="img/scene/scene photo5.jpg" alt="">
+                            </div>
+                            <div class="scene__photo">
+                                <img class="photo" src="img/scene/scene photo6.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="scene__slider__item">
+                            <div class="scene__photo">
+                                <img class="photo" src="img/scene/scene photo7.jpg" alt="">
+                            </div>
+                            <div class="scene__photo">
+                                <img class="photo" src="img/scene/scene photo8.jpg" alt="">
+                            </div>
+                            <div class="scene__photo">
+                                <img class="photo" src="img/scene/scene photo9.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="scene__slider__item">
+                            <div class="scene__photo">
+                                <img class="photo" src="img/scene/scene photo10.jpg" alt="">
+                            </div>
+                            <div class="scene__photo">
+                                <img class="photo" src="img/scene/scene photo11.jpg" alt="">
+                            </div>
+                            <div class="scene__photo">
+                                <img class="photo" src="img/scene/scene photo12.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="scene__slider__item">
+                            <div class="scene__photo">
+                                <img class="photo" src="img/scene/scene photo13.jpg" alt="">
+                            </div>
+                            <div class="scene__photo">
+                                <img class="photo" src="img/scene/scene photo14.jpg" alt="">
+                            </div>
+                            <div class="scene__photo">
+                                <img class="photo" src="img/scene/scene photo15.jpg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="scene__slider-btn scene__right-btn">
+                    <i class="fas fa-arrow-right" data-id="right-btn" ></i>
+                </button>
+            </div>
+            <div class="scene__btns">
+                <input class="scene__btn" data-value="first" name="scene" type="radio" checked>
+                <input class="scene__btn" data-value="second" name="scene" type="radio">
+                <input class="scene__btn" data-value="third" name="scene" type="radio">
+                <input class="scene__btn" data-value="fourth" name="scene" type="radio">
+                <input class="scene__btn" data-value="fifth" name="scene" type="radio">
+            </div>
+        </section>
+        <section class="movie__illust">
+            <header class="illust__header">Illust</header>
+            <div class="illust__content">
+                <button class="illust__slider-btn illust__left-btn">
+                    <i class="fas fa-arrow-left" data-id="left-btn"></i>
+                </button>
+                <div class="illust__wrapper">
+                    <ul class="illust__slider">
+                        <li class="illust__slider__item">
+                            <div class="illust__photo">
+                                <img class="photo" src="img/illust/illust1.jpg" alt="">
+                            </div>
+                            <div class="illust__photo">
+                                <img class="photo" src="img/illust/illust2.jpg" alt="">
+                            </div>
+                            <div class="illust__photo">
+                                <img class="photo" src="img/illust/illust3.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="illust__slider__item">
+                            <div class="illust__photo">
+                                <img class="photo" src="img/illust/illust4.jpg" alt="">
+                            </div>
+                            <div class="illust__photo">
+                                <img class="photo" src="img/illust/illust5.jpg" alt="">
+                            </div>
+                            <div class="illust__photo">
+                                <img class="photo" src="img/illust/illust6.gif" alt="">
+                            </div>
+                        </li>
+                        <li class="scene__slider__item">
+                            <div class="illust__photo">
+                                <img class="photo" src="img/illust/illust7.jpg" alt="">
+                            </div>
+                            <div class="illust__photo">
+                                <img class="photo" src="img/illust/illust8.jpg" alt="">
+                            </div>
+                            <div class="illust__photo">
+                                <img class="photo" src="img/illust/illust9.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="scene__slider__item">
+                            <div class="illust__photo">
+                                <img class="photo" src="img/illust/illust10.jpg" alt="">
+                            </div>
+                            <div class="illust__photo">
+                                <img class="photo" src="img/illust/illust11.jpg" alt="">
+                            </div>
+                            <div class="illust__photo">
+                                <img class="photo" src="img/illust/illust12.jpg" alt="">
+                            </div>
+                        </li>
+                        <li class="scene__slider__item">
+                            <div class="illust__photo">
+                                <img class="photo" src="img/illust/illust13.jpg" alt="">
+                            </div>
+                            <div class="illust__photo">
+                                <img class="photo" src="img/illust/illust14.jpg" alt="">
+                            </div>
+                            <div class="illust__photo">
+                                <img class="photo" src="img/illust/illust15.jpg" alt="">
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <button class="illust__slider-btn illust__right-btn">
+                    <i class="fas fa-arrow-right" data-id="right-btn" ></i>
+                </button>
+            </div>
+            <div class="illust__btns">
+                <input class="illust__btn" data-value="first" name="illust" type="radio" checked>
+                <input class="illust__btn" data-value="second" name="illust" type="radio">
+                <input class="illust__btn" data-value="third" name="illust" type="radio">
+                <input class="illust__btn" data-value="fourth" name="illust" type="radio">
+                <input class="illust__btn" data-value="fifth" name="illust" type="radio">
+            </div>
+        </section>
+    </section>
+</section>
+</main>
+    <!-- 랜덤명언 -->
     <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
-    <div id="weather">
       <span></span>
       <span></span>
     </div>
