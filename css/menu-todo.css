@@ -77,7 +77,7 @@
 
 .menu__header__text {
   color: var(--white-color);
-  font-size: var(--menu-header-text);
+  font-size: 30px;
   transition: all 0.3s ease;
 }
 
@@ -163,9 +163,9 @@
   margin: 0.75em;
 }
 
-.header__lalaland {
+/*.header__aladdin {
   font-family: "Yasashii-bold";
-}
+}*/
 
 .follow-btn {
   will-change: transform;
