@@ -16,9 +16,13 @@ let clicked = false;
 let duration = 0;
 
 function onClickMenuHeader(event) {
-    const target = event.target;
-    const dataset = target.dataset;
+//메뉴 아이콘 눌렀을 때 이벤트 발생.
+    const target = event.target; 
+    //이벤트 발생한 요소 반환
+    const dataset = target.dataset; 
+    // html에서 사용한 data- 값을 읽어냄 data-value="scroll"
     const key = dataset.key;
+    //data-key="header-icon", "header-text"
     if (key === undefined) {
         return;
     } else {
