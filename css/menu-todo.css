@@ -119,7 +119,7 @@
 
 .menu__title:hover,
 .menu__item:hover {
-  background-color: var(--menu-color);
+  background-color: rgb(130, 167, 223);
 }
 
 .menu__title-btn {

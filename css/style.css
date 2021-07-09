@@ -23,6 +23,7 @@ body {
   align-items: center;
   overflow-x: hidden;
   position: relative; /*하위 absoulte 적용하기위해 */
+  background-attachment: fixed;
 }
 
 .bgImage {
@@ -58,4 +59,9 @@ button:hover {
 ul,
 input {
   all: unset;
+}
+
+/* 박스 사이즈 */
+* {
+  box-sizing: border-box;
 }

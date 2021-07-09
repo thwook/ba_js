@@ -1,5 +1,5 @@
 //array
-const quotes = [
+/*const quotes = [
     {  
         //시작부터 훌륭할 필요는 없다. 하지만, 훌륭해 지기 위해서는 시작해야 한다.
         quote: "You don't have to be great to start, but you have to start to be great.",
@@ -61,4 +61,4 @@ const author = document.querySelector("#quote span:last-child");
 const todaysQuote = quotes[Math.floor(Math.random() * quotes.length)];
 
 quote.innerText = todaysQuote.quote;
-author.innerText = todaysQuote.author;  
+author.innerText = todaysQuote.author;  */

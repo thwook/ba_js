@@ -19,6 +19,7 @@
    <script src="js/todos.js" defer></script>
    <script src="js/menu.js" defer></script>
    <script src="js/music.js" defer></script>
+   <script src="js/movie.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -70,8 +71,8 @@
           <div class="menu__title menu-home"><button class="menu__title-btn" data-value="Home">Home</button></div>
           <li class="menu__item menu-todo"><button class="menu__item__btn" data-value="Todo">Todo</button></li>
           <div class="menu__title menu-movie"><button class="menu__title-btn" data-value="Movie">Movie</button></div>
-          <li class="menu__item menu-scene"><button class="menu__item__btn" data-value="Scene">Scene</button></li>
-          <li class="menu__item menu-illust"><button class="menu__item__btn" data-value="Illust">Illust</button></li>
+          <li class="menu__item menu-scene"><button class="menu__item__btn" data-value="Scene">Photo</button></li>
+          <li class="menu__item menu-illust"><button class="menu__item__btn" data-value="Illust">Speech</button></li>
       </ul>
     </div>
       </section>
@@ -120,12 +121,119 @@
             </a>
         </div>
     </section>
+    <section class="movie">
+      <header class="movie__header">
+          <span class="movie__header__text">🎬 Movie</span>
+      </header>
+      <section class="movie__scene">
+          <header class="scene__header">📷 Photo</header>
+          <div class="scene__content">
+              <button class="scene__slider-btn scene__left-btn">
+                  <i class="fas fa-arrow-left" data-id="left-btn"></i>
+              </button>
+              <div class="scene__wrapper">
+                  <ul class="scene__slider">
+                      <li class="scene__slider__item">
+                          <div class="scene__photo">
+                              <img class="photo" src="img/scene/scene1.jpg" alt="">
+                          </div>
+                          <div class="scene__photo">
+                              <img class="photo" src="img/scene/scene2.jpg" alt="">
+                          </div>
+                          <div class="scene__photo">
+                              <img class="photo" src="img/scene/scene3.jpg" alt="">
+                          </div>
+                      </li>
+                      <li class="scene__slider__item">
+                          <div class="scene__photo">
+                              <img class="photo" src="img/scene/scene4.jpg" alt="">
+                          </div>
+                          <div class="scene__photo">
+                              <img class="photo" src="img/scene/scene5.jpg" alt="">
+                          </div>
+                          <div class="scene__photo">
+                              <img class="photo" src="img/scene/scene6.jpg" alt="">
+                          </div>
+                      </li>
+                      <li class="scene__slider__item">
+                          <div class="scene__photo">
+                              <img class="photo" src="img/scene/scene7.jpg" alt="">
+                          </div>
+                          <div class="scene__photo">
+                              <img class="photo" src="img/scene/scene8.jpg" alt="">
+                          </div>
+                          <div class="scene__photo">
+                              <img class="photo" src="img/scene/scene9.jpg" alt="">
+                          </div>
+                      </li>
+                  </ul>
+              </div>
+              <button class="scene__slider-btn scene__right-btn">
+                  <i class="fas fa-arrow-right" data-id="right-btn" ></i>
+              </button>
+          </div>
+          <div class="scene__btns">
+              <input class="scene__btn" data-value="first" name="scene" type="radio" checked>
+              <input class="scene__btn" data-value="second" name="scene" type="radio">
+              <input class="scene__btn" data-value="third" name="scene" type="radio">
+          </div>
+      </section>
+      <section class="movie__illust">
+        <header class="illust__header">📣 Speech</header>
+        <div class="illust__content">
+            <button class="illust__slider-btn illust__left-btn">
+                <i class="fas fa-arrow-left" data-id="left-btn"></i>
+            </button>
+            <div class="illust__wrapper">
+                <ul class="illust__slider">
+                    <li class="illust__slider__item">
+                        <div class="illust__photo">
+                          <span class="speech">The more you gain by pretending, the less you're gonna actually have.</span>
+                          <span class="speech-kor">거짓으로 얻는 것이 많은 질수록, 진짜로 얻는 것이 작아져</span>
+                        </div>
+                        <div class="illust__photo">
+                          <span class="speech">I made you look like a prince on the outside, But I didn't change anything on the inside.</span>
+                          <span class="speech-kor">난 너의 겉모습을 왕자로 바꿔 주었지, 내면까지 바꾸지는 못해</span>
+                        </div>
+                        <div class="illust__photo">
+                          <span class="speech">If you don't have anything, you have act like you own everything.</span>
+                          <span class="speech-kor">만약가진게 아무것도 없다면, 오히려 모든 것을 다 가진 것처럼 행동해야 해요.</span>
+                         </div>
+                    </li>
+                    <li class="illust__slider__item">
+                        <div class="illust__photo">
+                          <span class="speech">When there's nothing, you have to pretend you have everything.</span>
+                          <span class="speech-kor">가진 게 없을 땐 오히려 다 가진 것처럼 행동해야 해요.</span>
+                        </div>
+                        <div class="illust__photo">
+                          <span class="speech">I wish... to set you free.</span>
+                          <span class="speech-kor">내 소원은, 네가 자유로워지는 거야.</span>
+                        </div>
+                        <div class="illust__photo">
+                          <span class="speech">All I know is I won't go speechless</span>
+                          <span class="speech-kor">내가 아는 건 난 더 이상 침묵하지 않을 거라는 거야.</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>  
+            <button class="illust__slider-btn illust__right-btn">
+                <i class="fas fa-arrow-right" data-id="right-btn" ></i>
+            </button>
+        </div>
+        <div class="illust__btns">
+            <input class="illust__btn" data-value="first" name="illust" type="radio" checked>
+            <input class="illust__btn" data-value="second" name="illust" type="radio">
+        </div>
+    </section>
+      <!-- 랜덤명언 
+        <div id="quote">
+          <span></span>
+          <span></span>
+        </div> -->
+</section>
+
 </main>
-    <!-- 랜덤명언 -->
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
+  
   </body>
   
 </html>
